@@ -44,7 +44,7 @@ public class cocoManager : MonoBehaviour
         switch (num)
         {
             case 1:
-                if (ShareData.data.bookData[num] == "1")
+                if (BookData.cocoBookData.bookData[num] == "1")
                 {
                     feedBackBImage.SetActive(false);
                     feedBackImage.SetActive(true);
@@ -53,7 +53,7 @@ public class cocoManager : MonoBehaviour
                 }
                 break;
             case 2:
-                if (ShareData.data.bookData[num] == "1")
+                if (BookData.cocoBookData.bookData[num] == "1")
                 {
                     pukeBImage.SetActive(false);
                     pukeImage.SetActive(true);
@@ -62,7 +62,7 @@ public class cocoManager : MonoBehaviour
                 }
                 break;
             case 3:
-                if (ShareData.data.bookData[num] == "1")
+                if (BookData.cocoBookData.bookData[num] == "1")
                 {
                     fireBImage.SetActive(false);
                     fireImage.SetActive(true);
@@ -71,7 +71,7 @@ public class cocoManager : MonoBehaviour
                 }
                 break;
             case 4:
-                if (ShareData.data.bookData[num] == "1")
+                if (BookData.cocoBookData.bookData[num] == "1")
                 {
                     travelBImage.SetActive(false);
                     travelImage.SetActive(true);
@@ -80,7 +80,7 @@ public class cocoManager : MonoBehaviour
                 }
                 break;
             case 5:
-                if (ShareData.data.bookData[num] == "1")
+                if (BookData.cocoBookData.bookData[num] == "1")
                 {
                     goodBImage.SetActive(false);
                     goodImage.SetActive(true);

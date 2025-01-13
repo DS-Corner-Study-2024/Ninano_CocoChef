@@ -12,7 +12,7 @@ public class ShareData : MonoBehaviour
     // 도구는 이름으로 스트링 저장
     public string toolData;
     // 도감 상태 배열로 저장 및 업데이트
-    public string[] bookData = new string[] {"0","0","0","0","0","0"};
+    //public string[] bookData = new string[] {"0","0","0","0","0","0"};
 
 
     public void Awake()
@@ -22,10 +22,10 @@ public class ShareData : MonoBehaviour
         {
             data = this;
         }
-        //else
-        //{
-        //    Destroy(gameObject);
-        //}
+        else
+        {
+            Destroy(gameObject);
+        }
         Debug.Log(ingredientData[0]);
     }
 

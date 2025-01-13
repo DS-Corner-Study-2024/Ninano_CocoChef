@@ -33,7 +33,7 @@ public class ScoreManager : MonoBehaviour
     void Start()
     {
 
-        StartCoroutine(FeedBackDelay(2f));
+        StartCoroutine(FeedBackDelay(1.5f));
     }
 
     // 재료 데이터를 감싸는 클래스
@@ -50,7 +50,7 @@ public class ScoreManager : MonoBehaviour
         {
             if (ShareData.data.ingredientData[3] == "1") //불닭소스 선택시: 불그새
             {
-                ShareData.data.bookData[3] = "1";
+                BookData.cocoBookData.bookData[3] = "1";
             }
             else if(ShareData.data.ingredientData[0] == "1" && ShareData.data.ingredientData[1] == "1" &&
                 ShareData.data.ingredientData[2] == "1" && ShareData.data.ingredientData[3] == "0" &&
@@ -60,10 +60,10 @@ public class ScoreManager : MonoBehaviour
                 ShareData.data.ingredientData[10] == "1" && ShareData.data.ingredientData[11] == "1" &&
                 ShareData.data.ingredientData[12] == "0" && ShareData.data.ingredientData[13] == "1") //최고의 레시피: 황홀 그새
             {
-                ShareData.data.bookData[5] = "1";
+                BookData.cocoBookData.bookData[5] = "1";
             } else
             {//탈난그새
-                ShareData.data.bookData[2] = "1";
+                BookData.cocoBookData.bookData[2] = "1";
             }
             
         }
@@ -77,16 +77,16 @@ public class ScoreManager : MonoBehaviour
                 ShareData.data.ingredientData[10] == "0" && ShareData.data.ingredientData[11] == "0" &&
                 ShareData.data.ingredientData[12] == "1" && ShareData.data.ingredientData[13] == "0") //여유 만만 그새: 코코넛 & 젤리만 선택시
             {
-                ShareData.data.bookData[4] = "1";
+                BookData.cocoBookData.bookData[4] = "1";
             } else
             {// 나머지는 탈난그새
-                ShareData.data.bookData[2] = "1";
+                BookData.cocoBookData.bookData[2] = "1";
             }
             
         }
         else
         {// 나머지는 탈난그새
-            ShareData.data.bookData[2] = "1";
+            BookData.cocoBookData.bookData[2] = "1";
         }
            
 
@@ -159,7 +159,7 @@ public class ScoreManager : MonoBehaviour
     IEnumerator FeedBackDelay(float delay)
     {
 
-        ShareData.data.bookData[1] = "1";
+        BookData.cocoBookData.bookData[1] = "1";
         // delay 초 동안 대기
         yield return new WaitForSeconds(delay);
 
