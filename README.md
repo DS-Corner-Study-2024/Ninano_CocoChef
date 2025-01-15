@@ -1,6 +1,6 @@
 # 코코 요리사 (COCOChef)
 
-(https://github.com/user-attachments/assets/ef05fb80-4e41-4e0c-8c5a-bdef86a0136b)
+![게임 시연 동영상](https://github.com/user-attachments/assets/ef05fb80-4e41-4e0c-8c5a-bdef86a0136b)
 
 ### 개발자: 니나노
 
